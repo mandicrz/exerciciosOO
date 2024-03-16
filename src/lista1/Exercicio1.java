@@ -28,6 +28,6 @@ public class Exercicio1 {
         else {
             System.out.println("Voce nao recebeu uma multa");
         }
-
+        entrada.close();
     }
 }
