@@ -8,13 +8,13 @@ public class Exercicio4 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Digite a primeira data: ");
-        String[] date1 = scanner.nextLine().split(", ");
+        String[] date1 = scanner.nextLine().split("/");
         day1 = Integer.parseInt(date1[0]);
         month1 = Integer.parseInt(date1[1]);
         year1 = Integer.parseInt(date1[2]);
 
         System.out.println("Digite a segunda data: ");
-        String[] date2 = scanner.nextLine().split(", ");
+        String[] date2 = scanner.nextLine().split("/");
         day2 = Integer.parseInt(date2[0]);
         month2 = Integer.parseInt(date2[1]);
         year2 = Integer.parseInt(date2[2]);
@@ -22,7 +22,7 @@ public class Exercicio4 {
         if (year1 > year2 || (year1 == year2 && month1 > month2) || (year1 == year2 && month1 == month2 && day1 > day2)){
             System.out.println("A primeira data é maior: " + formatDate(day1, month1, year1));
         }
-        else if (year1 < year2 || (year1 == year2 && month1 < month2) || (year1 == year2 && month1 == month2 && day1 < day2)) {
+        else if (year1 < year2 || month1 < month2 || day1 < day2) {
             System.out.println("A segunda data é maior: " + formatDate(day2, month2, year2));
         }
         else {
