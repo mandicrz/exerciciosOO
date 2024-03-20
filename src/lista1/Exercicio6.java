@@ -8,6 +8,7 @@ public class Exercicio6 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite um numero: ");
         num = scanner.nextInt();
+        scanner.close();
 
         if (num <= 1){
             isPrime = false;

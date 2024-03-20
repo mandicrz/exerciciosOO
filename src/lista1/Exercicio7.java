@@ -13,6 +13,7 @@ public class Exercicio7 {
         quantity = scanner.nextInt();
         System.out.println("Qual e o preco unitario dele? ");
         unityPrice = scanner.nextDouble();
+        scanner.close();
 
         total = quantity * unityPrice;
 
@@ -27,7 +28,5 @@ public class Exercicio7 {
         totalPrice = total - discount;
 
         System.out.println("O valor total, sem o desconto e de " + total + " reais, o desconto sera de " + discount + " reais e o total a se pagar e " + totalPrice + " reais");
-
-        scanner.close();
     }
 }

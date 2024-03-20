@@ -11,6 +11,8 @@ public class Exercicio1 {
         System.out.println("Digite a velocidade que o motorista estava dirigindo: ");
         vel = entrada.nextInt();
 
+        entrada.close();
+
         dif = vel - velMax;
 
         if (dif <= 10 && dif > 0){
@@ -28,6 +30,6 @@ public class Exercicio1 {
         else {
             System.out.println("Voce nao recebeu uma multa");
         }
-        entrada.close();
+
     }
 }

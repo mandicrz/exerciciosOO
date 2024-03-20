@@ -6,8 +6,9 @@ public class Exercicio2 {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Digite um caractere: ");
         x = entrada.next().charAt(0); // Não lê entrada.nextChar();
-        
-       if (Character.isDigit(x)) { // Verifica se o caractere é numérico: de 0 a 9
+        entrada.close();
+
+        if (Character.isDigit(x)) { // Verifica se o caractere é numérico: de 0 a 9
            System.out.println ("Numerico");
        } else if (Character.isLetter(x)) { // Verifica se o caractere é uma letra
            char lowercase = Character.toLowerCase(x);
@@ -26,6 +27,5 @@ public class Exercicio2 {
        else {
            System.out.println ("Outro caractere qualquer");
        }
-        entrada.close();
     }
 }
