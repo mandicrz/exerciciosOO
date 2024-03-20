@@ -10,6 +10,8 @@ public class Exercicio5 {
 
         System.out.println("Digite o codigo de usuario: ");
         codeuser = scanner.nextInt();
+        scanner.close();
+
         if (codeuser == code){
            System.out.println("Agora, digite a senha: ");
            keyuser = scanner.nextInt();

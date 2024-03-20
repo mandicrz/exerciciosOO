@@ -19,6 +19,9 @@ public class Exercicio4 {
         month2 = Integer.parseInt(date2[1]);
         year2 = Integer.parseInt(date2[2]);
 
+        scanner.close();
+
+
         if (year1 > year2 || (year1 == year2 && month1 > month2) || (year1 == year2 && month1 == month2 && day1 > day2)){
             System.out.println("A primeira data é maior: " + formatDate(day1, month1, year1));
         }

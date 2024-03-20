@@ -13,20 +13,21 @@ public class Exercicio3 {
         System.out.println ("Digite o valor de c: ");
         c = scanner.nextInt();
 
+        scanner.close();
+
         delta = Math.pow(b, 2) - 4*a*c;
 
         if (delta > 0){
             r1 = (-(b) + Math.sqrt(delta))/(2*a);
             r2 = (-(b) - Math.sqrt(delta))/(2*a);
-            System.out.println ("As raizes sao: " + r1 + " e " + r2);
+            System.out.println ("As raizes sao: " + String.format("%.2f", r1) + " e " + String.format("%.2f", r2));
         }
         else if (delta == 0) {
-            r1 = -(b)/(2*a);
-            System.out.println ("A unica raiz real e " + r1);
+            r1 = (double) -(b) /(2*a);
+            System.out.println ("A unica raiz real e " + String.format("%.2f", r1));
         }
         else {
-            System.out.println ("Nao existem raizes reais");
+            System.out.println("Nao existem raizes reais");
         }
-        scanner.close();
     }
 }

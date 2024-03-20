@@ -9,6 +9,8 @@ public class Exercicio8 {
         System.out.println("Digite um numero de 1 a 10: ");
         num = scanner.nextInt();
 
+        scanner.close();
+
         String[] numberFull = {
                 "Um", "Dois", "Tres", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"
         };
