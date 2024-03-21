@@ -1,12 +1,11 @@
 package lista1;
 import java.util.Scanner;
-
 public class Exercicio11 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
-        int num, posH = 0, posL = 0;
+        int num, posH = 1, posL = 1;
         int highest = 0, lowest = 0;
 
         System.out.println("Digite o numero de alunos: ");
