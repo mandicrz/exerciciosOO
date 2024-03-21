@@ -7,17 +7,17 @@ public class Exercicio11 {
         Scanner scanner = new Scanner(System.in);
 
         int num, posH = 0, posL = 0;
-        double highest = 0, lowest = 0;
+        int highest = 0, lowest = 0;
 
         System.out.println("Digite o numero de alunos: ");
         num = scanner.nextInt();
 
-        double[] height = new double[num];
+        int[] height = new int[num];
 
         System.out.println("Digite as alturas: ");
 
         for (int i = 0; i < num; i++){
-            height[i]= scanner.nextDouble();
+            height[i]= scanner.nextInt();
             if (i == 0){
                 highest = height[i];
                 lowest = height[i];
@@ -34,7 +34,7 @@ public class Exercicio11 {
 
         scanner.close();
 
-        System.out.println("O aluno mais alto e o " + posH + "°, com " + highest + " e o mais baixo e o " + posL + "°, com " + lowest);
+        System.out.println("O aluno mais alto e o " + posH + "°, com " + highest + "cm e o mais baixo e o " + posL + "°, com " + lowest + " cm");
 
     }
 }
