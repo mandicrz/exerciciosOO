@@ -25,15 +25,18 @@ public class Exercicio11 {
                 highest = height[i];
                 posH = i + 1;
             }
-            if (height[i] < lowest){
+            if (height[i] < lowest) {
                 lowest = height[i];
                 posL = i + 1;
             }
         }
 
         scanner.close();
-
-        System.out.println("O aluno mais alto e o " + posH + "°, com " + highest + "cm e o mais baixo e o " + posL + "°, com " + lowest + " cm");
-
+            if (highest == lowest){
+                System.out.println("As alturas sao iguais: " + highest + " cm e " + lowest + " cm");
+            }
+            else {
+                System.out.println("O aluno mais alto e o " + posH + "°, com " + highest + "cm e o mais baixo e o " + posL + "°, com " + lowest + " cm");
+            }
     }
 }
