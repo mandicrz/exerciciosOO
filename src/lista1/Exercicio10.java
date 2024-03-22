@@ -6,8 +6,8 @@ public class Exercicio10 {
         double soma = 0;
 
         for (denominador = 1; denominador <= 50; denominador++) {
-            numerador = numerador + 2;
             soma = soma + ((double) numerador /denominador);
+            numerador = numerador + 2;
         }
 
         System.out.printf("A soma e %.2f", soma);
